@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.uowee.easy.dialog.view.EasyDialogLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/ed_stub_head" />
+
+    <ScrollView
+        android:id="@+id/ed_content_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/ed_dialog_content_padding"
+        android:paddingTop="@dimen/ed_dialog_content_padding">
+
+        <TextView
+            android:id="@+id/ed_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:paddingLeft="@dimen/ed_dialog_content_padding"
+            android:paddingRight="@dimen/ed_dialog_content_padding"
+            tools:text="content" />
+
+    </ScrollView>
+
+    <include layout="@layout/ed_stub_bottom" />
+</com.uowee.easy.dialog.view.EasyDialogLayout>
