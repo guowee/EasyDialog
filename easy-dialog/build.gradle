@@ -36,16 +36,16 @@ dependencies {
 }
 
 //项目主页
-def siteUrl = ''    // project homepage
+def siteUrl = 'https://github.com/guowee/EasyDialog'    // project homepage
 //项目的版本控制地址
-def gitUrl = '' // project git
+def gitUrl = 'https://github.com/guowee/EasyDialog.git' // project git
 
 //发布到组织名称名字，必须填写
 group = "com.uowee.dialog"
 //发布到JCenter上的项目名字，必须填写
 def libName = "easy-dialog"
 // 版本号，下次更新是只需要更改版本号即可
-version = "1.0.0"
+version = "1.0.1"
 
 //生成源文件
 task sourcesJar(type: Jar) {
@@ -60,6 +60,7 @@ task javadoc(type: Javadoc) {
     options.charSet 'UTF-8'
     options.author true
     options.version true
+    options.links "https://github.com/guowee/EasyDialog/tree/master/easy-dialog/docs/javadoc"
     failOnError false
 }
 
