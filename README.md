@@ -13,4 +13,4 @@ compile 'com.muse.easy.dialog:easy-dialog:1.0.1'
   builder.create().show();
 ```				
 ### Screenshot
-![][./screenshot/dialog.png]
+![][https://github.com/guowee/EasyDialog/blob/master/screenshot/dialog.png]
